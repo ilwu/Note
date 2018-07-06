@@ -11,3 +11,15 @@ https://marketplace.visualstudio.com/items?itemName=battas.ResolveUR-ResolveUnus
 
 說明:
 僅供參考, 不建議自動移除, 有些第三方lib使用到, 但未在專案中使用的也會被移除
+
+
+##Chocolatey
+
+Will 保哥的開發人員工具軟體清單 ( 最新 2017 年版 )
+https://blog.miniasp.com/post/2017/09/13/Will-2017-Ultimate-Developer-Tool-Software-List.aspx
+
+Installing Chocolatey (in power shell)
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+Installing ChocolateyGUI
+choco install ChocolateyGUI
