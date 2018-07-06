@@ -1,5 +1,10 @@
 # Note
 
+## Markdown 語法說明中文版
+
+https://github.com/othree/markdown-syntax-zhtw
+
+
 ## 移除專案中不需要的參考
 URL:
 https://marketplace.visualstudio.com/items?itemName=battas.ResolveUR-ResolveUnusedReferences
