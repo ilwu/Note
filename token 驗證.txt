@@ -1,0 +1,25 @@
+1.client分頁列印按鈕按下
+
+2.client 發送查詢資訊到 AP 要 token
+
+2.AP SERVER 產生token  回傳 client
+
+	json 格式文字
+	{
+		uuid: 123-123-123-123-123
+		datetime: 20180101223001111
+		分頁查詢條件 : xxxxxx
+		
+	}
+	AES 加密後變成一串字串
+	=> asdasdawdqwdqwdqw
+	
+	並記錄 UUID 
+	
+3.client 向 report server 發出 request , 參數只帶 token
+
+4.report 輸出前
+	1.先看時間是否逾期 (datetime + 10 秒)
+	2.發 request 向 ap 驗證 uuid 是否存在
+
+5.AP 回傳 ok 後, 依照 token 裡面的資訊查詢資料並列印出報表

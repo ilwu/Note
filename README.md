@@ -23,3 +23,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 
 Installing ChocolateyGUI
 choco install ChocolateyGUI
+
+## PowerShell 實現 tail 功能
+Get-Content -Path "C:\scripts\test.txt" -Wait
