@@ -26,3 +26,13 @@ choco install ChocolateyGUI
 
 ## PowerShell 實現 tail 功能
 Get-Content -Path "C:\scripts\test.txt" -Wait
+
+## 加速 powershell 開啟
+
+http://blog.xuite.net/haoming/mypoint/166267497-%E5%8A%A0%E5%BF%ABPowershell%E9%96%8B%E5%95%9F%E9%80%9F%E5%BA%A6
+
+Set-Alias ngen @(
+dir (join-path ${env:\windir} "Microsoft.NET\Framework") ngen.exe -recurse |
+sort -descending lastwritetime
+)[0].fullName
+[appdomain]::currentdomain.getassemblies() | %{ngen $_.location}
