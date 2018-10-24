@@ -36,3 +36,10 @@ dir (join-path ${env:\windir} "Microsoft.NET\Framework") ngen.exe -recurse |
 sort -descending lastwritetime
 )[0].fullName
 [appdomain]::currentdomain.getassemblies() | %{ngen $_.location}
+
+
+## Window 10 Telnet
+執行
+dism /online /Enable-Feature /FeatureName:TelnetClient
+
+開始右鍵->應用程式與功能->程式和功能
